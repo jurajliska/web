@@ -17,7 +17,7 @@
             font-family: 'Kanit', Verdana, sans-serif;
             font-size: 24px;
             font-weight: lighter;
-            margin: 8px 24px;
+            margin: 0px;
         }
 
         /* Nadpisy */
@@ -25,7 +25,7 @@
             color: orange;
             font-size: 120px;
             font-weight: bold;
-            margin: 180px auto 240px;
+            margin: 160px auto 220px;
         }
 
         h2{
@@ -34,8 +34,8 @@
             font-size: 60px;
             font-weight: normal;
             font-style: italic;
-            margin: 96px auto 24px;
-            border: 1px solid;
+            padding-top: 72px;
+            margin: 24px 48px;
         }
 
         /* Texts */
@@ -64,26 +64,74 @@
 
         /* Lists */
         ul{
-            margin: 0px auto 24px;
             list-style-position: inside;
+            list-style-type: square;
+            margin: 0px auto 32px;
         }
 
-        
+        /* Navigacia */
+        nav{
+            position: sticky;
+            top: 0px;
+        }
+
+        nav ul{
+            display: flex;
+            background-color: darkolivegreen;
+            padding: 24px 20px;
+        }
+
+        nav li{
+            flex: content;
+            list-style-type: none;
+        }
+
+        nav a{
+            text-decoration: none;
+        }
+        nav a:hover,
+        nav a:active{
+            color: orange;
+            font-weight: lighter;
+            text-decoration: underline;
+        }
+
+        /* Foot */
+        footer{
+            background-color: black;
+            font-size: 80%;
+            margin-top: 48px;
+        }
+
+        footer p{
+            margin-bottom: 0px;
+        }
+
     </style>
 </head>
 
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#omne" >O mne</a></li>
+            <li><a href="#praca" class="skip-link">Pracovné skúsenosti</a></li>
+            <li><a href="#skola" class="skip-link">Vzdelanie</a></li>
+            <li><a href="#skill" class="skip-link">Skills</a></li>
+            <li><a href="#kontakt" class="skip-link">Kontakty</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Bc. Juraj Líška</h1>
     </header>
 
     <main>
-        <h2>O mne</h2>
+        <h2 class="section" id="omne">O mne</h2>
         <P>Zdravím. Som obyčajný chlapec z Košíc, ktorý sa snaží dostať do IT.</P>
         
         <!-- Praca -->
-        <h2>Pracovné skúsenosti</h2>
+        <h2 id="praca">Pracovné skúsenosti</h2>
         <p><b>Skladový kontrolór</b>, INMEDIA, spol. s r. o. <span>(sep. 2022 - aug. 2023)</span></p>
         <ul>
             <li>kontrola tovaru určeného na expedíciu</li>
@@ -91,7 +139,7 @@
         </ul>
 
         <!-- Skola -->
-        <h2>Vzdelanie</h2>
+        <h2 id="skola">Vzdelanie</h2>
         <p><b>Fakulta elektrotechniky a informatiky</b>, Technická univerzita v Košiciach <span>(sep. 2012 - jan. 2021)</span></p>
         <ul>
             <li>Informatika - Inteligentné systémy</li>
@@ -103,7 +151,7 @@
         <p><b>IT sieťová akadémia</b>, Univerzitné centrum Košice <span>(dec. 2021 - feb. 2022)</span></p>
 
         <!-- Skills -->
-        <h2>Skills</h2>
+        <h2 id="skill">Skills</h2>
         <p><b>Práca s počítačom</b> <span>- pokročilý</span></p>
         <p><b>HTMl</b> <span>- základy</span></p>
         <p><b>CSS</b> <span>- základy</span></p>
@@ -114,13 +162,17 @@
         <p><b>Anglický jazyk</b>  <span>- mierne pokročilý (B1)</span></p>
 
         <!-- Kontakt -->
-        <h2>Kontakty</h2>
+        <h2 id="kontakt">Kontakty</h2>
         <p>✉ <a href="mailto:liska.juraj@outlook.sk">liska.juraj@outlook.sk</a></p>
         <p>☁ <a target="_blank" href="https://github.com/jurajliska">github.com/jurajliska</a></p>
 
         <p>Moja prva stranka: <a href="jurkostranka.html">jurkostranka.html</a></p>
         
     </main>
+
+    <footer>
+        <p>© Juraj Líška, 2023</p>
+    </footer>
     
 </body>
 </html>
