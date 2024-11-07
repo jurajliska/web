@@ -64,17 +64,21 @@ nav{
 }
 
 nav ul{
-    display: flex;
+    overflow: hidden;
     background-color: darkolivegreen;
     padding: 24px 20px;
+    
 }
 
 nav li{
-    flex: content;
+    float: left;
     list-style-type: none;
 }
 
-nav a{
+nav li a{
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
     text-decoration: none;
 }
 nav a:hover,
@@ -83,6 +87,30 @@ nav a:active{
     font-weight: lighter;
     text-decoration: underline;
 }
+
+.drop {
+    /* float: right; */
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-content{
+    display: none;
+    position: absolute;
+    background-color: olive;
+    overflow: auto;
+    min-width: 120px;
+    top: 54px;
+    left: 780px;
+    z-index: 1;
+}
+
+.menu-content a{
+    padding: 8px;
+    display: block;
+}
+
+.show{display: block;}
 
 /* Foot */
 footer{

@@ -14,7 +14,6 @@
     
 </head>
 
-
 <body>
     <nav>
         <ul>
@@ -23,6 +22,14 @@
             <li><a href="#skola" class="skip-link">Vzdelanie</a></li>
             <li><a href="#skill" class="skip-link">Skills</a></li>
             <li><a href="#kontakt" class="skip-link">Kontakty</a></li>
+            <li class="drop"><a onclick="menuFunction()" class="menu">Menu</a></li>
+            <div id="menu" class="menu-content">
+                <a href="#omne" >O mne</a>
+                <a href="#praca" class="skip-link">Pracovné skúsenosti</a>
+                <a href="#kontakt" class="skip-link">Kontakty</a>
+                <a href="mapa.html">Map</a>
+            </div>
+            
         </ul>
     </nav>
 
@@ -36,6 +43,11 @@
         
         <!-- Praca -->
         <h2 id="praca">Pracovné skúsenosti</h2>
+        <p><b>Laboratórny technik</b>, Howe Slovensko s. r. o. <span>(okt. 2022 - )</span></p>
+        <ul>
+            <li>testovanie kože</li>
+        </ul>
+
         <p><b>Skladový kontrolór</b>, INMEDIA, spol. s r. o. <span>(sep. 2022 - aug. 2023)</span></p>
         <ul>
             <li>kontrola tovaru určeného na expedíciu</li>
@@ -75,8 +87,27 @@
     </main>
 
     <footer>
-        <p>© Juraj Líška, 2023</p>
+        <p>&copy; Juraj Líška, 2023</p>
     </footer>
+
+    <script>
+        function menuFunction() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu')) {
+                var menus = document.getElementsByClassName("menu-content");
+                var i;
+                for (i = 0; i < menus.length; i++){
+                    var openMenu = menus[i];
+                    if (openMenu.classList.contains('show')) {
+                        openMenu.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
     
 </body>
 </html>
