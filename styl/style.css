@@ -13,7 +13,7 @@ h1{
     color: orange;
     font-size: 120px;
     font-weight: bold;
-    margin: 160px auto 220px;
+    margin: 20px auto 140px;
 }
 
 h2{
@@ -121,4 +121,11 @@ footer{
 
 footer p{
     margin-bottom: 0px;
+}
+
+img {
+    height: 150px;
+    margin-top: 80px;
+    border-radius: 50%;
+    border: 1px solid orange;
 }
