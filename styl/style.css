@@ -13,7 +13,10 @@ h1{
     color: orange;
     font-size: 120px;
     font-weight: bold;
-    margin: 20px auto 140px;
+    margin: 20px auto 0px;
+    background: linear-gradient(rgba(85, 107, 47, 0.5), rgba(85, 107, 47, 0.5)),
+                center 25% /70% url("/styl/fox.jpeg") fixed ;
+    padding: 200px 0px 200px;   
 }
 
 h2{
