@@ -1,5 +1,11 @@
+:root {
+    --darkolive: darkolivegreen;
+    --white: whitesmoke;
+    --orange: orange;
+}
+
 body{
-    background-color: darkolivegreen;
+    background-color: var(--darkolive);
     color: whitesmoke;
     text-align: center;
     font-family: 'Ubuntu', Verdana, sans-serif;
@@ -10,7 +16,7 @@ body{
 
 /* Nadpisy */
 h1{
-    color: orange;
+    color: var(--orange);
     font-size: 120px;
     font-weight: bold;
     margin: 20px auto 0px;
@@ -20,13 +26,20 @@ h1{
 }
 
 h2{
-    color: orange;
+    color: var(--orange);
     text-align: left;
     font-size: 60px;
     font-weight: normal;
     font-style: italic;
     padding-top: 72px;
     margin: 48px 48px 24px;
+}
+
+h3{
+    color: var(--orange);
+    font-size: 40px;
+    font-style: italic;
+    margin: 48px 0px 20px;
 }
 
 /* Texts */
@@ -68,7 +81,7 @@ nav{
 
 nav ul{
     overflow: hidden;
-    background-color: darkolivegreen;
+    background-color: var(--darkolive);
     padding: 24px 20px;
     
 }
