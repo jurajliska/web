@@ -1,11 +1,12 @@
 :root {
     --darkolive: darkolivegreen;
-    --white: whitesmoke;
     --orange: orange;
+    --darkorange: rgb(201, 110, 0);
+    --black: rgb(49,49,49);
 }
 
 body{
-    background-color: var(--darkolive);
+    background-color: var(--bg);
     color: whitesmoke;
     text-align: center;
     font-family: 'Ubuntu', Verdana, sans-serif;
@@ -16,7 +17,7 @@ body{
 
 /* Nadpisy */
 h1{
-    color: var(--orange);
+    color: var(--fontColor);
     font-size: 120px;
     font-weight: bold;
     margin: 20px auto 0px;
@@ -26,7 +27,7 @@ h1{
 }
 
 h2{
-    color: var(--orange);
+    color: var(--fontColor);
     text-align: left;
     font-size: 60px;
     font-weight: normal;
@@ -36,7 +37,7 @@ h2{
 }
 
 h3{
-    color: var(--orange);
+    color: var(--fontColor);
     font-size: 40px;
     font-style: italic;
     margin: 48px 0px 20px;
@@ -81,7 +82,7 @@ nav{
 
 nav ul{
     overflow: hidden;
-    background-color: var(--darkolive);
+    background-color: var(--bg);
     padding: 24px 20px;
     
 }
@@ -102,6 +103,11 @@ nav a:active{
     color: orange;
     font-weight: lighter;
     text-decoration: underline;
+}
+
+.dark{
+    cursor: pointer;
+    background-color: var(--btnBg);
 }
 
 .drop {
@@ -137,6 +143,18 @@ footer{
 
 footer p{
     margin-bottom: 0px;
+}
+
+.light-theme{
+    --bg: var(--darkolive);
+    --fontColor: var(--orange);
+    --btnBg: var(--black);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--darkorange);
+    --btnBg: var(--darkolive);
 }
 
 img {
