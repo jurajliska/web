@@ -23,17 +23,20 @@
             <li><a href="#skill" class="skip-link">Skills</a></li>
             <li><a href="#kontakt" class="skip-link">Odkazy</a></li>
             <li><a class="dark">Dark</a></li>
-            <li class="drop"><a onclick="menuFunction()" class="menu">Menu</a></li>
-            <div id="menu" class="menu-content">
-                <a href="#omne" >O mne</a>
-                <a href="#praca" class="skip-link">Pracovné skúsenosti</a>
-                <a href="#kontakt" class="skip-link">Odkazy</a>
-                <a href="mapa.html">Map</a>
-                <a href="https://jurajliska.github.io/Snake_The_Game">Had</a>
-                <a href="projects.html">Projects</a>
-            </div>
+            <li class="menubtn"><a>Menu</a></li>
         </ul>
     </nav>
+
+    <div id="menu" class="overlay">
+        <a class="closebtn close">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#omne" class="close">O mne</a>
+            <a href="#kontakt" class="close">Kontakt</a>
+            <a href="mapa.html">Map</a>
+            <a href="projects.html">Projekty</a>
+        </div>
+    </div>
 
     <header>
         <h1>Juraj Líška</h1>
@@ -94,7 +97,7 @@
     <footer>
         <p>&copy; Juraj Líška, 2023 - 2025</p>
     </footer>
-
+    
     <script src="skript.js"></script>
 </body>
 </html>

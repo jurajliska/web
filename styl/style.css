@@ -110,29 +110,47 @@ nav a:active{
     background-color: var(--btnBg);
 }
 
-.drop {
-    /* float: right; */
+.menubtn {
+    float: right;
     position: relative;
     cursor: pointer;
 }
 
-.menu-content{
-    display: none;
-    position: absolute;
-    background-color: olive;
-    overflow: auto;
-    min-width: 120px;
-    top: 54px;
-    left: 780px;
+.overlay{
+    height: 100%;
+    width: 0%;
+    position: fixed;
     z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    text-decoration: none;
 }
 
-.menu-content a{
+.overlay-content{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
     padding: 8px;
+    text-decoration: none;
+    font-size: 34px;
     display: block;
+    transition: 0.15s;
 }
 
-.show{display: block;}
+.overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+}
 
 /* Foot */
 footer{

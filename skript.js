@@ -1,18 +1,15 @@
-function menuFunction() {
-    document.getElementById("menu").classList.toggle("show");
-}
+const menubtn = document.querySelector(".menubtn");
+const closebtn = document.getElementsByClassName("close");
 
-window.onclick = function(event) {
-    if (!event.target.matches('.menu')) {
-        var menus = document.getElementsByClassName("menu-content");
-        var i;
-        for (i = 0; i < menus.length; i++){
-            var openMenu = menus[i];
-            if (openMenu.classList.contains('show')) {
-                openMenu.classList.remove('show');
-            }
-        }
-    }
+menubtn.addEventListener("click", function() {
+    document.getElementById("menu").style.width = "100%";
+})
+
+for (let i = 0; i < closebtn.length; i++) {
+    closebtn[i].addEventListener("click", function() {
+        document.getElementById("menu").style.width = "0%";
+    })
+    
 }
 
 const switcher = document.querySelector(".dark");

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projekty</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,24 +17,38 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li class="menubtn"><a>Menu</a></li>
         </ul>
     </nav>
 
+    <div id="menu" class="overlay">
+        <a class="closebtn close">&times;</a>
+
+        <div class="overlay-content">
+            <a href="index.html#omne" class="close">O mne</a>
+            <a href="index.html#kontakt" class="close">Kontakt</a>
+            <a href="mapa.html">Map</a>
+            <a href="projects.html">Projekty</a>
+        </div>
+    </div>
+
     <header>
-        <h2 style="padding-top: 12px; margin: 12px 48px;">Projects</h2>
+        <h2 style="padding-top: 12px; margin: 12px 48px;">Projekty</h2>
     </header>
 
     <main>
         <h3>Phaser game</h3>
         <p>Prvy dotyk s Phaserom</p>
-        <a target="_blank" href="https://jurajliska.github.io/first-phaser-game/">jurajliska.github.io/first-phaser-game</a>
+        <p><a target="_blank" href="https://jurajliska.github.io/first-phaser-game/">jurajliska.github.io/first-phaser-game</a></p>
         
         <h3>Snake</h3>
         <p>Hra had v Javascripte</p>
-        <a target="_blank" href="https://jurajliska.github.io/Snake_The_Game/">jurajliska.github.io/Snake_The_Game</a>
+        <p><a target="_blank" href="https://jurajliska.github.io/Snake_The_Game/">jurajliska.github.io/Snake_The_Game</a></pp>
         
         <h3>Converter</h3>
-        <a target="_blank" href="https://jurajliska.github.io/converter">jurajliska.github.io/converter</a>
+        <p><a target="_blank" href="https://jurajliska.github.io/converter">jurajliska.github.io/converter</a></p>
     </main>
+
+    <script src="skript.js"></script>
 </body>
 </html>
