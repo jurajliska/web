@@ -12,11 +12,29 @@ for (let i = 0; i < closebtn.length; i++) {
     
 }
 
+if (localStorage.getItem("theme") === null) {
+    localStorage.setItem("theme", "light-theme");
+}
+document.body.classList.add(localStorage.getItem("theme"));
+
 const switcher = document.querySelector(".dark");
 
 switcher.addEventListener("click", function() {
-    document.body.classList.toggle("light-theme");
-    document.body.classList.toggle("dark-theme");
+    let theme = localStorage.getItem("theme");
+    
+    if ( theme === "light-theme") {
+        theme = "dark-theme";
+        localStorage.setItem("theme", theme);
+    } else {
+        theme = "light-theme";
+        localStorage.setItem("theme", theme);
+    }
+    
+    let oldTheme = document.body.className;
+    document.body.classList.replace(oldTheme, theme);
+
+    //document.body.classList.toggle("light-theme");
+    //document.body.classList.toggle("dark-theme");
 
     const className = document.body.className;
     if(className === "light-theme") {
